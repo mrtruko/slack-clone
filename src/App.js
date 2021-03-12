@@ -2,22 +2,30 @@ import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Chat from './components/Chat';
 import Login from './components/Login';
+import styled from 'styled-components';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path="/room">
-            <Chat />
-          </Route>
-          <Route path="/">
-            <Login />
-          </Route>
-        </Switch>
+        <Container>
+          <Header />
+          <Switch>
+            <Route path="/room">
+              <Chat />
+            </Route>
+            <Route path="/">
+              <Login />
+            </Route>
+          </Switch>
+        </Container>
       </Router>
     </div>
   );
 }
+
+const Container = styled.div``;
+
+const Header = styled.div``;
 
 export default App;
