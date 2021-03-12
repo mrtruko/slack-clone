@@ -12,8 +12,8 @@ function App() {
       <Router>
         <Container>
           <Header />
-          <Sidebar />
           <Main>
+          <Sidebar />
             <Switch>
               <Route path="/room">
                 <Chat />
@@ -39,6 +39,8 @@ const Container = styled.div`
 
 const Main = styled.div`
   background: blue;
+  display: grid;
+  grid-template-columns: 260px auto;
 `;
 
 
