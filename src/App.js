@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Chat from './components/Chat';
 import Login from './components/Login';
 import styled from 'styled-components';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -26,6 +27,5 @@ function App() {
 
 const Container = styled.div``;
 
-const Header = styled.div``;
 
 export default App;
