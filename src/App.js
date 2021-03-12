@@ -32,7 +32,6 @@ function App() {
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background: orange;
   display: grid;
   grid-template-rows: 38px auto;
 `;

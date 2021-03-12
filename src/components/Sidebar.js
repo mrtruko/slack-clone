@@ -1,6 +1,6 @@
 function Sidebar() {
     return (
-        <div style={{background: "red"}}>
+        <div>
             sidebar
         </div>
     )
