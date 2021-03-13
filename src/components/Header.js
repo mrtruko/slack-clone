@@ -35,18 +35,24 @@ const Container = styled.div`
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
 `;
 const Main = styled.div`
     display: flex;
+    margin-left: 16px;
 
 `;
 const UserContainer = styled.div`
-    align-items: center;
     display: flex;
+    align-items: center;
+    padding-right: 16px;
+    position: absolute;
+    right: 0;
 `;
 const SearchContainer = styled.div`
     min-width: 400px;
+    margin: 0 16px 0 16px;
 `;
 const Search = styled.div`
     box-shadow: inset 0 0 0 1px rgb(103 74 104);
@@ -66,5 +72,16 @@ const Search = styled.div`
         }
     }
 `;
-const Name = styled.div``;
-const UserImage = styled.div``;
+const Name = styled.div`
+    padding-right: 16px;
+`;
+const UserImage = styled.div`
+    width: 28px;
+    height: 28px;
+    border: 2px solid white;
+    border-radius: 3px;
+
+    img {
+        width: 100%;
+    }
+`;
